@@ -36,7 +36,7 @@ Assim como toda calculadora, ela é prática para realizar contas básicas rapid
 ```
 calculadora-em-texto-baseada-em-c/  
 │── main.c
-│── LICENSE.md
+│── LICENSE
 │── README.md  
 └── imagens/  
     ├── Demonstração1.png
