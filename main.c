@@ -6,12 +6,12 @@ void menu() {
     printf("\n=====================================\n");
     printf("\tCalculadora Simples\n");
     printf("=====================================\n");
-    printf("Selecione uma opção: \n");
+    printf("Selecione uma opcao: \n");
     printf("\n");
-    printf("1. Adição.\n");
-    printf("2. Subtração.\n");
-    printf("3. Multiplicação.\n");
-    printf("4. Divisão.\n");
+    printf("1. Adicao.\n");
+    printf("2. Subtracao.\n");
+    printf("3. Multiplicacao.\n");
+    printf("4. Divisao.\n");
     printf("5. Sair.\n\n");
 
 }
@@ -38,7 +38,7 @@ int main() {
 
     while (1) {
         menu();
-        printf("Opção: ");
+        printf("Opcao: ");
         scanf("%s", opcao);
 
         if (verifica(opcao) == 0) {
@@ -50,9 +50,9 @@ int main() {
 
             float a, b;
 
-            printf("Primeiro número: ");
+            printf("Primeiro numero: ");
             scanf("%f", &a);
-            printf("Segundo número: ");
+            printf("Segundo numero: ");
             scanf("%f", &b);
 
             switch(opcao[0]) {
@@ -73,16 +73,16 @@ int main() {
                         printf("Resultado: %.2f / %.2f = %.2f\n", a, b, a / b);
                         break;
                     } else {
-                        printf("Erro: divisão por zero não é permitida.\n");
+                        printf("Erro: divisao por zero não eh permitida.\n");
                     }
             }
 
-            printf("Você quer continuar? [s/n] ");
+            printf("Voce quer continuar? [s/n] ");
             scanf(" %c", &querer);
 
             while (tolower(querer) != 's' && tolower(querer) != 'n') {
-                printf("\nErro, por favor, digite 's' para sim e 'n' para não.\n");
-                printf("Você quer continuar? [s/n] ");
+                printf("\nErro, por favor, digite 's' para sim e 'n' para nao.\n");
+                printf("Voce quer continuar? [s/n] ");
                 scanf(" %c", &querer);
             }
 
@@ -92,15 +92,10 @@ int main() {
             }
 
         } else if (verifica(opcao) == 1) {
-            printf("\nErro: número fora do intervalo permitido. Tente novamente.\n");
+            printf("\nErro: numero fora do intervalo permitido. Tente novamente.\n");
         } else if (verifica(opcao) == 2) {
-            printf("\nErro: a entrada é não numérica. Tente novamente.\n");
+            printf("\nErro: a entrada eh nao numerica. Tente novamente.\n");
         }
-
-
-        
     }
-
-
     return 0;
 }
