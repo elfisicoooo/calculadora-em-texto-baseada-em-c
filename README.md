@@ -11,10 +11,31 @@ Uma calculadora que funciona inteiramente no terminal, com as quatro operações
   <img src="./imagens/Demonstração2.png" width="45%" alt="Foto 2">
 </p>
 
-### Pré-requisitos
+### Instalação e Pré-requisitos
 
-Para conseguir rodar o programa, basta um editor de código como o Visual Studio Code e um compilador de linguagem C. Após isso, crie um arquivo .c e passe o código para ele.
+1. No terminal, digite:
+   
+   ```
+   git clone https://github.com/elfisicoooo/calculadora-em-texto-baseada-em-c
+   cd calculadora-em-texto-baseada-em-c
+   ```
 
+2. Após isso, compile com:
+   
+   ```
+   gcc main.c -o calculadora
+   ```
+
+3. Por fim, rode com:
+   
+   Windows:
+   ```
+   calculadora.exe
+   ```
+   Linux/macOS:
+   ```
+   ./calculadora
+   ```
 ### Usos e exemplos
 
 Ao iniciar o programa, aparecerá um menu inicial com cinco opções:
@@ -34,7 +55,7 @@ Assim como toda calculadora, ela é prática para realizar contas básicas rapid
 ### Estrutura do projeto
     
 ```
-calculadora-em-texto-baseada-em-c/  
+.
 │── main.c
 │── LICENSE
 │── README.md  
